@@ -1,0 +1,53 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;  CHARSET=utf=8">
+	<style>
+		p{
+		font-family: Arial;
+		}
+	</style>
+</head>
+<body>
+<ol type="disc"><h1><p>Pytania</p></h1> 
+	<li><h1><p>1) zapisz zastosowanie i składnię selektora potomka.</h1>
+		<ul>Przy użyciu selektora potomka można formatować elementy,<br>
+		które sa zawarte wewnątrz innych znaczników, czyli leżą niżej w hierarchii drzewa dokumentu.<br>
+		Składnia teoretyczna:<br>
+		przodek1 przodek2 ... potomek { cecha: wartość }
+		<br></ul></p>		
+		</li>
+	<li><h1><p>2) do formatowania jakich elementów służył.</h1>
+		<ul>pozwala nadać atrybuty elementom, które leżą niżej w<br>
+		hierarchii drzewa dokumentu (zawierają się w innych zewnętrznych znacznikach).<br>
+		Dzięki temu możemy zmienić typ formatowania tylko dla określonych elementów,<br>
+		które są podrzędne w stosunku do innych (przodków).</ul></p>	
+		</li>	
+	<li><h1><p>3) składnia teoretyczna.</h1>
+		<ul>
+		<textarea cols="76" rows="16">
+		<html>
+		<head>
+		<title>styl wpisany</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style type="text/css">
+		p b { color: red }
+		</style>
+		</head>
+		<body>
+		<p>Dzięki temu, jeśli wewnątrz znacznika p (akapit)<br>
+		<b> znajdzie się znacznik b (czyli pogrubienie tekstu), to zostanie on automatycznie </b><br>
+		napisany czcionką koloru czerwonego.</p>
+		</body>
+		</html>
+		</textarea>
+		</ul><p>
+		</li>
+	<li><h1><p>4) opis przodek, potomek, cecha, wartość.</h1>
+		<ul>"przodek1, przodek2,..." oraz "potomek" (wielokropek należy pominąć!)<br>
+		są selektorami typu, przy czym przodek leży wyżej<br>
+		w hierarchii drzewa dokumentu<br>
+		Natomiast wyrazy "cecha" oraz "wartość" określają atrybuty elementu.</ul></p>
+		</li>
+	</ol>
+</body>
+</html>
